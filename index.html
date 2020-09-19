@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Speed Typer</title>
+  </head>
+  <body>
+    <header class="hide">
+      <span>Difficulty</span>
+      <select name="difficulty" id="difficulty">
+        <option value="1">Easy</option>
+        <option value="2">Medium</option>
+        <option value="3">Hard</option>
+      </select>
+    </header>
+
+    <section>
+      <div class="typer-container">
+        <div class="title">
+          <h1>👩‍💻 Speed Typer 👨‍💻</h1>
+        </div>
+        <div class="content">
+          <div class="top-part">
+            <div class="time-score">
+              <p>Time left : <span class="time-left">10</span>s</p>
+              <p>Score: <span class="score">0</span></p>
+            </div>
+          </div>
+          <div class="bottom-part">
+            <div class="type-word">
+              <h3>Type the following :</h3>
+              <p class="random-word">Word</p>
+              <input
+                type="text"
+                class="input-player"
+                placeholder="Type the word here..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="typer-container2 hide">
+        <h1>Time ran out</h1>
+        <p>Your final score is <span class="score">0</span></p>
+        <button class="reload-btn">Reload</button>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
